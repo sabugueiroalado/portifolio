@@ -1,0 +1,710 @@
+/*CSS Reset / Normalize*/
+* {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--primeira-cor-de-fundo);
+    color: var(--cor-da-fonte);
+}
+
+:root {
+    --cor-de-fundo-skillhobbies: #FFF;
+    --primeira-cor-de-fundo: #F5F5F5;
+    --segunda-cor-de-fundo: #EAF2FD;
+    --cor-da-fonte: #464646;
+    --cor-do-botao-demo: #2A7AE4;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Sessão Menu*/
+
+/* De acordo com o Figma? [OK]*/
+section.menu {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu__cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__imagem {
+    height: 64px;
+    width: 64px;
+    padding-left: 2rem;
+}
+
+.menu__title {
+    font-size: 1rem;
+}
+
+.menu__list {
+    display: flex;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 32px;
+}
+
+.menu__list__item__contato {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/*Sessão Title*/
+
+/* De acordo com o Figma? [OK]*/
+
+section.title {
+    padding: 2% 14%;
+    display: flex;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.title__profile {
+    width: 23rem;
+    height: 23rem;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__bio {
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.title__subsection {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.title__network {
+    padding: 0;
+    display: flex;
+    gap: 32px;
+}
+
+.title__network__item {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*Sessão About*/
+
+/* De acordo com o Figma? [OK]*/
+
+section.about {
+    padding: 2% 0;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+.about__title {
+    padding-left: 14%;
+    padding-right: 14%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.about__paragraph {
+    padding-left: 14%;
+    padding-right: 45%;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.about__container,
+.about__paragraph,
+.about__title {
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+/* Sessão Skills */
+
+/* De acordo com o Figma? [OK]*/
+
+section.skills {
+    padding: 2% 0;
+    margin: 1rem 0 2rem 0;
+}
+
+.skills__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skills__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills__box {
+    width: 11rem;
+    height: 11rem;
+    background-color: var(--cor-de-fundo-skillhobbies);
+    /* border-radius: 1.5rem; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.skills__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skills__img,
+.skills__ul,
+.skills__name,
+.img__skills {
+    background-color: var(--cor-de-fundo-skillhobbies);
+}
+
+.skills__name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*Sessão Hobbies*/
+
+/* De acordo com o Figma? [OK]*/
+
+section.hobbies {
+    padding: 2% 0;
+    margin: 1rem 0 2rem 0;
+}
+
+.hobbies__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hobbies__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.hobbies__box {
+    width: 11rem;
+    height: 11rem;
+    background-color: var(--cor-de-fundo-skillhobbies);
+    /* border-radius: 1.5rem; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.hobbies__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hobbies__img,
+.hobbies__ul,
+.hobbies__name,
+.img__hobbies {
+    background-color: var(--cor-de-fundo-skillhobbies);
+}
+
+.hobbies__name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Experiência Acadêmica*/
+
+/* De acordo com o Figma? [OK]*/
+
+section.academic {
+    background-color: var(--segunda-cor-de-fundo);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.academic__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+.academic__courses__one,
+.academic__courses__two {
+    background-color: var(--segunda-cor-de-fundo);
+    padding: 0;
+}
+
+.academic__courses__box {
+    width: 23rem;
+    height: 17.875rem;
+    margin-top: 1rem;
+    background-color: var(--cor-de-fundo-skillhobbies);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic__courses__list {
+    padding: 0;
+    background-color: var(--segunda-cor-de-fundo);
+    
+}
+
+.academic__courses__item__img {
+    background-color: var(--cor-de-fundo-skillhobbies);
+    /* width: 100%;
+    height: 17.875rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 1.5rem; */
+}
+
+.academic__courses__item__img img{
+    width: 11.875rem;
+    height: 8.125rem;
+    background-color: var(--cor-de-fundo-skillhobbies);
+}
+
+.logo__university {
+    width: 11.875rem;
+}
+
+.title__university {
+    margin-top: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+.courses__status {
+    margin-top: 0.2rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+/* experiência*/
+
+/* De acordo com o Figma? [OK]*/
+
+section.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    gap: 50px;
+}
+
+.experience__section__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.experiencie__box {
+    display: flex;
+    gap: 32px;
+}
+
+.experiencie__box__jogo {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+}
+
+.experience__img {
+    width: 47rem;
+    height: 25.5rem;
+}
+
+.experience__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.experience__text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.experiencia__botao__repo {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--cor-do-botao-demo);
+    color: var(--cor-do-botao-demo);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.experiencia__botao__demo {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    background-color: var(--cor-do-botao-demo);
+    border: 1px solid var(--cor-do-botao-demo);
+    color: var(--cor-de-fundo-skillhobbies);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/*Contato*/
+
+/* De acordo com o Figma? [OK]*/
+
+section.formcontato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--segunda-cor-de-fundo);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100vw;
+}
+
+.formcontato__contacto {
+    display: flex;
+    gap: 20px;
+    background-color: var(--segunda-cor-de-fundo);
+    padding: 0 5%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.formcontato__esquerda {
+    flex: 1;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+.formcontato__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.formcontato__text {
+    color: var(--cor-da-fonte);
+    background-color: var(--segunda-cor-de-fundo);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.formcontato__title {
+    color: var(--cor-da-fonte);
+    background-color: var(--segunda-cor-de-fundo);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.formcontato__subtext {
+    color: var(--cor-da-fonte);
+    background-color: var(--segunda-cor-de-fundo);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+.formcontato__input {
+    padding: 0.8rem;
+    border: none;
+    resize: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.formcontato__textarea {
+    padding: 0.8rem;
+    border: none;
+    resize: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.formcontato__botao {
+    width: 11rem;
+    height: 3.2rem;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--cor-do-botao-demo);
+    color: var(--cor-de-fundo-skillhobbies);
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/*footeer*/
+
+section.footer {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* .footer__rodape {
+    padding: 2rem 4rem 2rem 4rem;
+} */
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (max-width: 968px) {
+
+    /* Menu */
+
+    .menu__list__item{
+        display: none;
+    }
+
+    /*title*/
+    
+    .title__profile {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .title__bio {
+        font-size: 1.5rem;
+    }
+
+    .title__subsection {
+        font-size: 1rem;
+    }
+
+    /* Sobre mim */
+
+    .about__title {
+        font-size: 1.5rem;
+    }
+
+    .about__paragraph {
+        font-size: 0.8rem;
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+
+    /*Skills*/
+
+    .skills__title {
+        font-size: 1.5rem;
+    }
+
+    .skills__box {
+        width: 14rem;
+        height: 7.30rem;
+    } 
+
+    /*Hobbies*/
+
+    .hobbies__title {
+        font-size: 1.5rem;
+    }
+
+    .hobbies__box {
+        width: 14rem;
+        height: 7.30rem;
+    } 
+
+    /*Experiências acadêmicas*/
+
+    .academic__courses {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .academic__courses__box {
+        height: 7.375rem;
+    }
+
+    .academic__courses__item__img img {
+        width: 8rem;
+        height: 5rem;
+    }
+
+    /*Expeirência profissional*/
+
+    .experience__img {
+        width: 44rem;
+        height: 22rem;
+    }
+    
+    .experiencie__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experiencie__box__jogo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Contato */
+
+    .formcontato__esquerda {
+        display: none;
+    }
+
+}
+/*Mobile*/
+@media (max-width: 625px) {
+
+    /*Menu*/
+
+    section.menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .menu__imagem {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .menu__title,
+    .menu__list__item__contato {
+        font-size: 0.875rem;
+    }
+
+
+    /*Titulo*/
+
+    section.title {
+        display: flex;
+        padding: 1% 7%;
+    }
+
+    .title__div {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .title__profile {
+        width: 6.125rem;
+        height: 6.125rem;
+    }
+
+    .title__bio {
+        font-size: 1.2rem;
+    }
+
+    .title__subsection {
+        font-size: 0.875rem;
+    }
+
+    .title__network__item {
+        font-size: 0.875rem;
+    }
+
+    /*Sessão sobre*/
+
+    .about__title {
+        padding: 0 7%;
+    }
+
+    .about__paragraph {
+        padding: 0 7%;
+    }
+
+    /*Skills*/
+
+    .skills__box {
+        width: 9.75rem;
+    }
+
+    /*Hobbies*/
+
+    .hobbies__box {
+        width: 9.75rem;
+    }
+
+    /*Formação Acadêmica*/
+
+    /*Experiência Profissional*/
+
+    .experience__img {
+        width: 18.5rem;
+        height: 9rem;
+    }
+
+    /*Contato*/
+
+    .formcontato__input {
+        width: 25rem;
+    }
+
+    .formcontato__textarea {
+        width: 25rem;
+    }
+    /*Footer*/
+
+}
