@@ -4,20 +4,21 @@
     background-color: var(--segunda-cor-de-fundo);
     color: var(--cor-da-fonte);
     text-align: center;
+    padding: 10px;
 }
 
 .formacao__div {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
-    padding: 40px;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .formacao h2 {
-    font-size: 2rem;
+    font-size: 0.950rem;
     font-weight: 700;
-    padding-top: 50px;
+    padding: 10px;
 }
 
 .linha__formacao__um,
@@ -29,8 +30,8 @@
 }
 
 .formacao__box {
-    width: 468px;
-    height: 368px;
+    width: 298px;
+    height: 182px;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -44,21 +45,26 @@
 }
 
 .formacao__box__info h4 {
-    font-size: 1.375rem;
+    font-size: 0.850rem;
     font-weight: 700;
     padding-top: 20px;
 }
 
 .formacao__box__info p {
+    font-size: 0.650rem;
     font-weight: 500;
 }
 
 .formacao__box img {
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    .formacao__div {
+        flex-direction: row;
+    }
+
     .formacao h2 {
         font-size: 1.375rem;
     }
@@ -82,22 +88,35 @@
     }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (min-width: 1440px) {
+    .formacao {
+        padding: 50px;
+    }
+
     .formacao h2 {
-        font-size: 0.950rem;
-        padding: 10px;
+        font-size: 2rem;
+        padding: 30px;
     }
 
     .formacao__div {
-        flex-direction: column;
-        padding: 10px;
+        gap: 100px;
+    }
+
+    .formacao__box {
+        width: 368px;
+        height: 286px;
+    }
+
+    .formacao__box img {
+        width: 70%;
+        height: 70%;
     }
 
     .formacao__box__info h4 {
-        font-size: 0.850rem;
+        font-size: 1.375rem;
     }
 
     .formacao__box__info p {
-        font-size: 0.650rem;
+        font-size: 1rem;
     }
 }

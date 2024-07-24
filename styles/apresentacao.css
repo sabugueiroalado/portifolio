@@ -7,83 +7,100 @@
 
 .apresentacao__box {
     display: flex;
-    align-items: center;
+    justify-content: center;
     justify-content: space-around;
-    flex-direction: row-reverse;
-    padding: 20px 273px;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .apresentacao__box__img {
-    width: 23rem;
+    width: 7rem;
 }
 
 .apresentacao__box h2 {
-    font-size: 3.25rem;
+    font-size: 0.950rem;
     font-weight: 700;
+    padding-top: 10px;
 }
 
 .apresentacao__box h3 {
-    font-size: 1.375rem;
+    font-size: 0.650rem;
     font-weight: 400;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .apresentacao__box ul {
     display: flex;
     align-items: center;
-    gap: 32px;
+    font-size: 0.650rem;
+    gap: 20px;
     font-weight: 500;
-    padding-top: 50px;
+    padding-top: 10px;
+    display: flex;
 }
 
-@media screen and (max-width: 768px) {
+.apresentacao__box ul img {
+    width: 0.350rem;
+    height: 0.350rem;
+}
+
+@media screen and (min-width: 768px) {
     .apresentacao__box__img {
         width: 14rem;
     }
 
     .apresentacao__box {
-        padding: 20px 60px;
+        padding: 10px;
+        flex-direction: row-reverse;
     }
 
     .apresentacao__box h2 {
         font-size: 1.375rem;
+        padding-bottom: 30px;
     }
 
     .apresentacao__box h3,
     .apresentacao__box ul {
         font-size: 0.950rem;
+        gap: 32px;
+    }
+
+    .apresentacao__box ul img {
+        width: 0.500rem;
+        height: 0.500rem;
     }
 
 }
 
-@media screen and (max-width: 345px) {
-    .apresentacao__box__img {
-        width: 7rem;
+@media screen and (min-width: 1440px) {
+    .apresentacao__box {
+        padding: 70px 250px 70px 250px;
     }
 
-    .apresentacao__box {
+    .apresentacao__box div {
+        display: flex;
         flex-direction: column;
-        padding: 10px;
-        align-items: flex-start
+        justify-content: center;
+    }
+
+    .apresentacao__box__img {
+        width: 23rem;
     }
 
     .apresentacao__box h2 {
-        font-size: 0.950rem;
+        font-size: 3.25rem;
     }
 
     .apresentacao__box h3 {
-        font-size: 0.650rem;
-        padding-top: 10px;
+        font-size: 1.375rem;
     }
 
     .apresentacao__box ul {
-        font-size: 0.650rem;
-        padding-top: 10px;
+        font-size: 1rem;
     }
 
     .apresentacao__box ul img {
-        width: 0.350rem;
-        height: 0.350rem;
+        width: 0.600rem;
+        height: 0.600rem;
     }
-
 }

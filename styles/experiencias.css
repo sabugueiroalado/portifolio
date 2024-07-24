@@ -3,12 +3,13 @@
     padding: 0;
     background-color: var(--primeira-cor-de-fundo);
     color: var(--cor-da-fonte);
+
 }
 
 .experiencia h2 {
     text-align: center;
-    padding: 40px;
-    font-size: 2rem;
+    font-size: 0.950rem;
+    padding: 10px;
     font-weight: 700;
 }
 
@@ -16,41 +17,41 @@
 .experiencia__box__dois {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.experiencia__box__dois {
-    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding: 10px;
+    flex-direction: column;
 }
 
 .experiencia__box img,
 .experiencia__box__dois img {
-    width: 47rem;
-    height: 25.375rem;
+    width: 20rem;
+    height: 12rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
 .experiencia__box__info h2 {
-    font-size: 1.375rem;
+    font-size: 0.750rem;
     font-weight: 700;
-    padding: 10px;
+    text-align: left;
+    padding: 10px 0 0 0;
 }
 
 
 .experiencia__box__info h3 {
+    font-size: 0.550rem;
     font-weight: 500;
-    padding: 10px;
+    text-align: left;
+    padding: 10px 0 0 0;
 }
 
 .experiencia__box__botao {
-    padding: 10px;
+    padding: 10px 0 0 0;
 }
 
 .repositorio {
-    width: 116px;
-    height: 51px;
+    width: 108px;
+    height: 40px;
     border: solid 2px #2a7ae4;
     color: #2a7ae4;
     font-weight: 700;
@@ -59,8 +60,8 @@
 }
 
 .demo {
-    width: 116px;
-    height: 51px;
+    width: 108px;
+    height: 40px;
     color: white;
     font-weight: 400;
     background-color: #2a7ae4;
@@ -68,7 +69,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .experiencia {
         display: flex;
         flex-direction: column;
@@ -91,41 +92,59 @@
         width: 40rem;
         height: 25.375rem;
     }
-}
 
-@media screen and (max-width: 345px) {
-    .experiencia h2 {
-        font-size: 0.950rem;
-        padding: 10px;
-    }
-
-    .experiencia__box img,
-    .experiencia__box__dois img {
-        width: 20rem;
-        height: 12rem;
-    }
-    
     .experiencia__box__info h2 {
-        font-size: 0.750rem;
-        text-align: left;
-        padding: 10px 0 0 0;
-
+        font-size: 1rem;
     }
 
     .experiencia__box__info h3 {
-        font-size: 0.550rem;
-        text-align: left;
-        padding: 10px 0 0 0;
-
-    }
-
-    .experiencia__box__botao {
-        padding: 10px 0 0 0;
+        font-size: 0.875rem;
     }
 
     .repositorio,
     .demo {
         width: 108px;
         height: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .experiencia {
+        padding: 50px;
+    }
+
+    .experiencia h2 {
+        font-size: 2rem;
+    }
+
+    .experiencia__box__info h2 {
+        font-size: 1.350rem;
+    }
+
+    .experiencia__box img,
+    .experiencia__box__dois img {
+        width: 47rem;
+        height: 25.375rem;
+    }
+
+    .experiencia__box {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .experiencia__box__dois {
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .experiencia__box__info {
+        padding: 40px;
+    }
+
+    .repositorio,
+    .demo {
+        width: 116px;
+        height: 51px;
     }
 }

@@ -1,29 +1,36 @@
 .hobbies {
     margin: 0;
-    padding: 50px;
+    padding: 0;
     background-color: var(--primeira-cor-de-fundo);
     color: var(--cor-da-fonte);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .hobbies h3 {
-    font-size: 2rem;
+    font-size: 0.950rem;
     font-weight: 700;
-    padding: 80px;
+    padding: 20px;
 }
 
 .linha__hobbies {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 70%;
 }
 
 .hobbies__box ul {
     background-color: #ffffff;
     border-radius: 5px;
-    width: 176px;
-    height: 174px;
+    width: 100px;
+    height: 100px;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -32,46 +39,48 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.hobbies__box ul img {
+    width: 0.950rem;
+    height: 0.950rem;
+}
+
 .hobbies__box li {
+    font-size: 0.650rem;
     font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .hobbies {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        padding-bottom: 70px;
     }
 
     .hobbies h3 {
         font-size: 1.375rem;
-        padding: 20px;
-    }
-
-    .linha__hobbies {
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 345px) {
-    .hobbies h3 {
-        font-size: 0.950rem;
+        padding: 70px 0 40px 0;
     }
 
     .hobbies__box ul {
-        width: 100px;
-        height: 100px;
+        width: 224px;
+        height: 218px;
     }
 
     .hobbies__box ul img {
-        width: 0.950rem;
-        height: 0.950rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     .hobbies__box li {
-        font-size: 0.650rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hobbies h3 {
+        font-size: 2rem;
+    }
+
+    .linha__hobbies {
+        width: 100%;
     }
 }
