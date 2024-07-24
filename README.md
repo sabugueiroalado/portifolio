@@ -2,7 +2,7 @@
 
 Este projeto é um desafio de desenvolvimento web! Aprendizagem por meio do programa ONE-Oracle! Aqui você encontrará informações sobre o projeto, as ferramentas utilizadas e instruções sobre como executá-lo em seu ambiente local.
 
-![image](https://github.com/user-attachments/assets/7e9df785-8e12-44dc-94fb-0bc616db53e0)
+![image](https://github.com/user-attachments/assets/2caeb9a7-c16b-4191-bb78-0770d5be3cc9)
 
 ## ℹ️ Sobre o Projeto
 O Portifólio é uma aplicação web simples e interativa, que mostrará informações sobre mim, além de habilidades e formação acadêmica. Foi desenvolvido com as seguintes tecnologias:
