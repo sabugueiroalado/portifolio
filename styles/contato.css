@@ -80,7 +80,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contato__box img {
         display: none;
     }
@@ -90,7 +90,7 @@
     }
 }
 
-@media (max-width: 345px) {
+@media screen and (max-width: 345px) {
     .contato {
         padding: 0;
     }

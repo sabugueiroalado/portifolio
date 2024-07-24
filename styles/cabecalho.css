@@ -41,7 +41,7 @@
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         width: 100%;
     }
@@ -55,7 +55,7 @@
     }
 }
 
-@media (max-width: 345px) {
+@media screen and (max-width: 345px) {
     .menu nav {
         padding: 10px;
     }
