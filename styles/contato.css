@@ -1,0 +1,121 @@
+.contato {
+    margin: 0;
+    padding: 0;
+    background-color: var(--segunda-cor-de-fundo);
+    color: var(--cor-da-fonte);
+    padding: 50px;
+}
+
+.contato__box {
+    display: flex;
+    justify-content: center;
+}
+
+.contato__box img {
+    width: 29rem;
+    height: 37.0625rem;
+}
+
+.contato__box__formulario {
+    flex-direction: column;
+}
+
+.contato__box__formulario form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contato__box__formulario ::placeholder {
+    font-weight: 700;
+}
+
+.contato__box__formulario h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.contato__box__formulario h3 {
+    font-weight: 500;
+    padding: 0 20px 10px 20px;
+}
+
+.contato__box__formulario input {
+    width: 41rem;
+    height: 3.5rem;
+    padding-left: 10px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    box-shadow: #2a7ae4 0px 5px;
+    transition: all 0.5s;
+}
+
+.contato__box__formulario input:focus,
+.contato__box__formulario textarea:focus {
+    border-radius: 10px;
+}
+
+.contato__box__formulario textarea {
+    width: 41rem;
+    height: 8rem;
+    resize: none;
+    padding: 10px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    box-shadow: #2a7ae4 0px 5px;
+    transition: all 0.5s;
+
+}
+
+.contato__box__formulario button {
+    width: 10.3125rem;
+    height: 3.1875rem;
+    color: white;
+    background-color: #2a7ae4;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contato__box img {
+        display: none;
+    }
+
+    .contato__box__formulario h2 {
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width: 345px) {
+    .contato {
+        padding: 0;
+    }
+
+    .contato__box__formulario {
+        padding: 0;
+    }
+
+    .contato__box__formulario h2 {
+        font-size: 0.950rem;
+        padding: 10px 20px 0 20px;
+    }
+
+    .contato__box__formulario h3 {
+        font-size: 0.650rem;
+        padding: 10px 20px 0 20px;
+    }
+
+    .contato__box__formulario input {
+        width: 19.5rem;
+        height: 3.5rem;
+    }
+
+    .contato__box__formulario textarea {
+        width: 19.5rem;
+        height: 7.5rem;
+    }
+}

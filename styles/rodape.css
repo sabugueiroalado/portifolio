@@ -1,0 +1,15 @@
+footer{
+    margin: 0;
+    padding: 30px;
+    color: var(--cor-da-fonte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--segunda-cor-de-fundo);
+}
+
+.rodape p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}

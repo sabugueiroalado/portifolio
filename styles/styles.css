@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+:root {
+    --cor-de-fundo-skillhobbies: #FFF;
+    --primeira-cor-de-fundo: #F5F5F5;
+    --segunda-cor-de-fundo: #EAF2FD;
+    --cor-da-fonte: #464646;
+    --cor-do-botao-demo: #2A7AE4;
+}
