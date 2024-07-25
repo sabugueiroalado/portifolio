@@ -1,0 +1,57 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--segunda-cor-de-fundo);
+    color: var(--cor-da-fonte);
+}
+
+.main h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.main h3 {
+    font-size: 0.650rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.main a {
+    width: 108px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #2a7ae4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main h3 {
+        font-size: 1.350rem;
+    }
+
+    .main a {
+        font-size: 1.350rem;
+        width: 196px;
+        height: 61px; 
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main h1 {
+        font-size: 2.5rem;
+    }
+}
